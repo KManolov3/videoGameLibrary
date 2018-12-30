@@ -28,6 +28,8 @@
     <!ELEMENT platform (#PCDATA)>
     <!ELEMENT description (#PCDATA)>
     <!ELEMENT franchise_name (#PCDATA)>
+    <!ELEMENT game_modes (game_mode+)>
+    <!ELEMENT game_mode (#PCDATA)>
     <!ELEMENT additional_content (content+)>
     <!ELEMENT content (name, type, date_published)>
     <!ELEMENT name (#PCDATA)>
