@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!ELEMENT catalogue (genres, studios, video_games)>
+	<!ELEMENT genres (genre+)>
+	<!ELEMENT genre (genre_name)>
+	<!ATTLIST genre genreID ID #REQUIRED>
+    <!ATTLIST genre gameRef IDREFS #IMPLIED>
+	<!ELEMENT genre_name (#PCDATA)>
+	<!ELEMENT studios (studio+)>
+	<!ELEMENT studio (studio_name, date_founded, studio_logo, headquarters, parent_company?)>
+	<!ATTLIST studio studioID ID #REQUIRED>
+	<!ATTLIST studio gameRef IDREFS #IMPLIED>
+	<!ELEMENT studio_name (#PCDATA)>
+	<!ELEMENT date_founded (#PCDATA)>
+	<!ELEMENT studio_logo EMPTY>
+	<!ATTLIST studio_logo href ENTITY #REQUIRED>
+    <!ELEMENT headquarters (#PCDATA)>
+    <!ELEMENT parent_company (#PCDATA)>
+	<!ELEMENT video_games (video_game+)>
+	<!ELEMENT video_game (video_game_name, game_logo, date_published, price, metacritic_score?, parental_guidance?, platforms?, description?, franchise_name?, game_modes?, 	additional_content?, awards?, gameplay_images?)>
+	<!ATTLIST video_game gameID ID #REQUIRED>
+	<!ATTLIST video_game genreRef IDREFS #IMPLIED>
+	<!ATTLIST video_game studioRef IDREFS #IMPLIED>
+    <!ELEMENT video_game_name (#PCDATA)>
+    <!ELEMENT game_logo EMPTY>
+	<!ATTLIST game_logo href ENTITY #REQUIRED>
+    <!ELEMENT date_published (#PCDATA)>
+    <!ELEMENT price (#PCDATA)>
+    <!ELEMENT metacritic_score (#PCDATA)>
+    <!ELEMENT parental_guidance (#PCDATA)>
+    <!ELEMENT platforms (platform+)>
+    <!ELEMENT platform (#PCDATA)>
+    <!ELEMENT description (#PCDATA)>
+    <!ELEMENT franchise_name (#PCDATA)>
+    <!ELEMENT game_modes (game_mode+)>
+    <!ELEMENT game_mode (#PCDATA)>
+    <!ELEMENT additional_content (content+)>
+    <!ELEMENT content (name, type, date_published)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT type (#PCDATA)>
+    <!ELEMENT date_content_published (#PCDATA)>
+    <!ELEMENT awards (award+)>
+    <!ELEMENT award (#PCDATA)>
+    <!ELEMENT gameplay_images (gameplay_image+)>
+    <!ELEMENT gameplay_image EMPTY>
+	<!ATTLIST gameplay_image href ENTITY #REQUIRED>
+	<!NOTATION jpg PUBLIC "jpg viewer">

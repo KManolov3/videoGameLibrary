@@ -1,0 +1,815 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="VideoGameCatalogue.xsl"?>
+
+<!DOCTYPE catalogue SYSTEM "videoGameCatalogue.dtd" [
+	<!ENTITY bethesda_logo SYSTEM "images/studios/bethesda.png" NDATA jpg>
+    <!ENTITY skyrim_logo SYSTEM "images/games/skyrim.jpg" NDATA jpg>
+    <!ENTITY skyrim_gp1 SYSTEM "images/games/skyrim_gp1.jpg" NDATA jpg>
+    <!ENTITY skyrim_gp2 SYSTEM "images/games/skyrim_gp2.jpg" NDATA jpg>
+    <!ENTITY oblivion_logo SYSTEM "images/games/oblivion.jpg" NDATA jpg>
+    <!ENTITY oblivion_gp1 SYSTEM "images/games/oblivion_gp1.jpg" NDATA jpg>
+    <!ENTITY oblivion_gp2 SYSTEM "images/games/oblivion_gp2.jpg" NDATA jpg>
+    <!ENTITY fallout3_logo SYSTEM "images/games/fallout3.jpg" NDATA jpg>
+    <!ENTITY fallout3_gp1 SYSTEM "images/games/fallout3_gp1.jpg" NDATA jpg>
+    <!ENTITY fallout3_gp2 SYSTEM "images/games/fallout3_gp2.jpg" NDATA jpg>
+    <!ENTITY cdProjekt_logo SYSTEM "images/studios/cdProjekt.png" NDATA jpg>
+    <!ENTITY theWitcher3_logo SYSTEM "images/games/theWitcher3.jpg" NDATA jpg>
+    <!ENTITY theWitcher3_gp1 SYSTEM "images/games/theWitcher3_gp1.jpg" NDATA jpg>
+    <!ENTITY theWitcher3_gp2 SYSTEM "images/games/theWitcher3_gp2.jpg" NDATA jpg>
+    <!ENTITY blizzard_logo SYSTEM "images/studios/blizzard.png" NDATA jpg>
+    <!ENTITY diablo2_logo SYSTEM "images/games/diablo2.jpg" NDATA jpg>
+    <!ENTITY diablo2_gp1 SYSTEM "images/games/diablo2_gp1.jpg" NDATA jpg>
+    <!ENTITY diablo2_gp2 SYSTEM "images/games/diablo2_gp2.jpg" NDATA jpg>
+    <!ENTITY hearthstone_logo SYSTEM "images/games/hearthstone.jpg" NDATA jpg>
+    <!ENTITY hearthstone_gp1 SYSTEM "images/games/hearthstone_gp1.jpg" NDATA jpg>
+    <!ENTITY hearthstone_gp2 SYSTEM "images/games/hearthstone_gp2.jpg" NDATA jpg>
+    <!ENTITY worldOfWarcraft_logo SYSTEM "images/games/worldOfWarcraft.jpg" NDATA jpg>
+    <!ENTITY worldOfWarcraft_gp1 SYSTEM "images/games/worldOfWarcraft_gp1.jpg" NDATA jpg>
+    <!ENTITY worldOfWarcraft_gp2 SYSTEM "images/games/worldOfWarcraft_gp2.jpg" NDATA jpg>
+    <!ENTITY creativeAssembly_logo SYSTEM "images/studios/creativeAssembly.png" NDATA jpg>
+    <!ENTITY totalWarWarhammer_logo SYSTEM "images/games/totalWarWarhammer.jpg" NDATA jpg>
+    <!ENTITY totalWarWarhammer_gp1 SYSTEM "images/games/totalWarWarhammer_gp1.jpg" NDATA jpg>
+    <!ENTITY totalWarWarhammer_gp2 SYSTEM "images/games/totalWarWarhammer_gp2.jpg" NDATA jpg>
+    <!ENTITY paradoxInteractive_logo SYSTEM "images/studios/paradoxInteractive.png" NDATA jpg>
+    <!ENTITY europaUniversalisIV_logo SYSTEM "images/games/europaUniversalisIV.jpg" NDATA jpg>
+    <!ENTITY europaUniversalisIV_gp1 SYSTEM "images/games/europaUniversalisIV_gp1.jpg" NDATA jpg>
+    <!ENTITY europaUniversalisIV_gp2 SYSTEM "images/games/europaUniversalisIV_gp2.jpg" NDATA jpg>
+    <!ENTITY stellaris_logo SYSTEM "images/games/stellaris.jpg" NDATA jpg>
+    <!ENTITY stellaris_gp1 SYSTEM "images/games/stellaris_gp1.jpg" NDATA jpg>
+    <!ENTITY stellaris_gp2 SYSTEM "images/games/stellaris_gp2.jpg" NDATA jpg>
+]>
+
+<catalogue>
+
+
+	<genres>
+		<genre genreID = "rpg" gameRef="skyrim oblivion fallout3 theWitcher3 diablo2 worldOfWarcraft">
+			<genre_name>Role-Playing Game</genre_name>
+		</genre>
+
+        <genre genreID = "card" gameRef="hearthstone">
+			<genre_name>Card Game</genre_name>
+		</genre>
+
+        <genre genreID = "strategy" gameRef="totalWarWarhammer europaUniversalisIV stellaris">
+			<genre_name>Strategy Game</genre_name>
+		</genre>
+	</genres>
+	
+
+	<studios>
+		<studio studioID = "bethesda" gameRef="skyrim oblivion fallout3">
+			<studio_name> Bethesda Game Studios </studio_name>
+			<date_founded> 28.06.1986 </date_founded>
+			<studio_logo href="bethesda_logo"/>
+            <headquarters> Rockville, Maryland, United States </headquarters>
+            <parent_company> Zenimax Studios </parent_company>
+		</studio>
+
+        <studio studioID = "cdProjekt" gameRef="theWitcher3">
+			<studio_name> CD Projekt Red </studio_name>
+			<date_founded> 05.1994 </date_founded>
+			<studio_logo href="cdProjekt_logo"/>
+            <headquarters> Warsaw, Poland </headquarters>
+            <parent_company>N/A</parent_company>
+		</studio>
+
+        <studio studioID = "blizzard" gameRef="diablo2 hearthstone worldOfWarcraft">
+			<studio_name> Blizzard Entertainment Inc. </studio_name>
+			<date_founded> 08.02.1991 </date_founded>
+			<studio_logo href="blizzard_logo"/>
+            <headquarters> Irvine, California, United States </headquarters>
+            <parent_company> Activision Blizzard </parent_company>
+		</studio>
+
+        <studio studioID = "creativeAssembly" gameRef="totalWarWarhammer">
+			<studio_name> Creative Assembly </studio_name>
+			<date_founded> 18.08.1987 </date_founded>
+			<studio_logo href="creativeAssembly_logo"/>
+            <headquarters> 	Horsham, England </headquarters>
+            <parent_company> Sega West </parent_company>
+		</studio>
+
+        <studio studioID = "paradoxInteractive" gameRef="europaUniversalisIV stellaris">
+			<studio_name> Paradox Development Studio </studio_name>
+			<date_founded> 1999 </date_founded>
+			<studio_logo href="paradoxInteractive_logo"/>
+            <headquarters> Stockholm, Sweden </headquarters>
+            <parent_company>N/A</parent_company>
+		</studio>
+	</studios>
+	
+
+	<video_games>
+
+		<video_game gameID="skyrim" genreRef="rpg" studioRef="bethesda">
+			<video_game_name>The Elder Scrolls V: Skyrim</video_game_name>
+            <game_logo href="skyrim_logo" />
+			<date_published> 11.11.2011 </date_published>
+			<price> 40 eur </price>
+            <metacritic_score> 94% </metacritic_score>
+            <parental_guidance> 12+ </parental_guidance>
+			<platforms>
+                <platform> Microsoft Windows </platform>
+                <platform> Xbox 360 </platform>
+                <platform> Xbox One </platform>
+                <platform> Playstation 3 </platform>
+                <platform> Playstation 4 </platform>
+                <platform> Mintendo Switch </platform>
+            </platforms>
+			<description>
+				The game's main story revolves around the player character's quest to defeat Alduin the World-Eater, a dragon who is prophesied to destroy the world. The game is set 200 years after the events of Oblivion and takes place in the fictional province of Skyrim. Over the course of the game, the player completes quests and develops the character by improving skills. The game continues the open-world tradition of its predecessors by allowing the player to travel anywhere in the game world at any time, and to ignore or postpone the main storyline indefinitely.
+			</description>
+            <franchise_name> The Elder Scrolls </franchise_name>
+            <game_modes>
+                <game_mode> Singleplayer </game_mode>
+            </game_modes>
+            <additional_content>
+                <content>
+                    <name> Dawnguard </name>
+                    <type> DLC </type>
+                    <date_published> 26.06.2012 </date_published>
+                </content>
+                <content>
+                    <name> Hearthfire </name>
+                    <type> DLC </type>
+                    <date_published> 04.09.2012 </date_published>
+                </content>
+                <content>
+                    <name> Dragonborn </name>
+                    <type> DLC </type>
+                    <date_published> 04.12.2012 </date_published>
+                </content>
+            </additional_content>
+            <awards>
+                <award> VGX Award for Best RPG 2011 </award>
+                <award> AIAA Game of the Year 2011 </award>
+                <award> GCA Best Console Game 2011 </award>
+            </awards>
+            <gameplay_images>
+                <gameplay_image href="skyrim_gp1" />
+                <gameplay_image href="skyrim_gp2" />
+            </gameplay_images>	
+		</video_game>
+
+        <video_game gameID="oblivion" genreRef="rpg" studioRef="bethesda">
+			<video_game_name>The Elder Scrolls IV: Oblivion</video_game_name>
+            <game_logo href="oblivion_logo" />
+			<date_published> 20.03.2006 </date_published>
+			<price> 20 eur </price>
+            <metacritic_score> 94% </metacritic_score>
+            <parental_guidance> 11+ </parental_guidance>
+			<platforms>
+                <platform> Microsoft Windows </platform>
+                <platform> Xbox 360 </platform>
+                <platform> Playstation 3 </platform>
+            </platforms>
+			<description>
+				Oblivion's main story revolves around the player character's efforts to thwart a fanatical cult known as the "Mythic Dawn" that plans to open portal gates to a demonic realm known as "Oblivion". The game continues the open world tradition of its predecessors by allowing the player to travel anywhere in the game world at any time and to ignore or postpone the main storyline indefinitely.
+			</description>
+            <franchise_name> The Elder Scrolls </franchise_name>
+            <game_modes>
+                <game_mode> Singleplayer </game_mode>
+            </game_modes>
+            <additional_content>
+                <content>
+                    <name> Horse Armor </name>
+                    <type> DLC </type>
+                    <date_published> 03.04.2006 </date_published>
+                </content>
+                <content>
+                    <name> The Orrey </name>
+                    <type> DLC </type>
+                    <date_published> 17.04.2006 </date_published>
+                </content>
+                <content>
+                    <name> The Wizard's Tower </name>
+                    <type> DLC </type>
+                    <date_published> 24.04.2006 </date_published>
+                </content>
+                <content>
+                    <name> The Thieves Den </name>
+                    <type> DLC </type>
+                    <date_published> 22.05.2006 </date_published>
+                </content>
+                <content>
+                    <name> Mehrunes' Razor </name>
+                    <type> DLC </type>
+                    <date_published> 15.06.2006 </date_published>
+                </content>
+                <content>
+                    <name> The Vile Lair </name>
+                    <type> DLC </type>
+                    <date_published> 13.06.2006 </date_published>
+                </content>
+                <content>
+                    <name> Spell Tomes </name>
+                    <type> DLC </type>
+                    <date_published> 31.08.2006 </date_published>
+                </content>
+                <content>
+                    <name> Knights of the Nine </name>
+                    <type> DLC </type>
+                    <date_published> 20.11.2006 </date_published>
+                </content>
+                <content>
+                    <name> Shivering Isles </name>
+                    <type> DLC </type>
+                    <date_published> 02.07.2007 </date_published>
+                </content>
+                <content>
+                    <name> The Fighters Stronghold </name>
+                    <type> DLC </type>
+                    <date_published> 15.10.2007 </date_published>
+                </content>
+            </additional_content>
+            <awards>
+                <award> VGX Award for Game of the Year 2006 </award>
+                <award> VGX Award for Best RPG 2006 </award>
+                <award> VGX Award for Best Original Score 2006 </award>
+                <award> VGX Award for Most Addictive Video Game 2006 </award>
+                <award> Golden Joystick Award for Ultimate Game of the Year 2006 </award>
+                <award> Satellite Award for Outstanding Role Playing Game 2006 </award>
+            </awards>
+            <gameplay_images>
+                <gameplay_image href="oblivion_gp1" />
+                <gameplay_image href="oblivion_gp2" />
+            </gameplay_images>	
+        </video_game>
+
+        <video_game gameID="fallout3" genreRef="rpg" studioRef="bethesda">
+			<video_game_name> Fallout 3 </video_game_name>
+            <game_logo href="fallout3_logo" />
+			<date_published> 28.10.2008 </date_published>
+			<price> 20 eur </price>
+            <metacritic_score> 91% </metacritic_score>
+            <parental_guidance> 14+ </parental_guidance>
+			<platforms>
+                <platform> Microsoft Windows </platform>
+                <platform> Xbox 360 </platform>
+                <platform> Playstation 3 </platform>
+            </platforms>
+			<description>
+				The game is set within a post-apocalyptic, open world environment that encompasses a scaled region consisting of the ruins of Washington, D.C. and much of the countryside to the west of it, referred to as the "Capital Wasteland". It takes place within Fallout's usual setting of a world that deviated into an alternate timeline thanks to atomic age technology, which eventually led to its devastation by a nuclear apocalypse in the year 2077.
+			</description>
+            <franchise_name> Fallout </franchise_name>
+            <game_modes>
+                <game_mode> Singleplayer </game_mode>
+            </game_modes>
+            <additional_content>
+                <content>
+                    <name> Operation: Anchorage </name>
+                    <type> DLC </type>
+                    <date_published> 01.10.2009 </date_published>
+                </content>
+                <content>
+                    <name> The Pitt </name>
+                    <type> DLC </type>
+                    <date_published> 01.10.2009 </date_published>
+                </content>
+                <content>
+                    <name> Broken Steel </name>
+                    <type> DLC </type>
+                    <date_published> 05.05.2009 </date_published>
+                </content>
+                <content>
+                    <name> Point Lookout </name>
+                    <type> DLC </type>
+                    <date_published> 23.06.2009 </date_published>
+                </content>
+                <content>
+                    <name> Mothership Zeta </name>
+                    <type> DLC </type>
+                    <date_published> 03.08.2009 </date_published>
+                </content>
+            </additional_content>
+            <awards>
+                <award> IGN Overall Award for Best RPG 2008 </award>
+                <award> IGN Overall Award for Best Story 2008 </award>
+                <award> IGN Overall Award for Overall Game of the Year 2008 </award>
+                <award> VGX Award for Best RPG 2008 </award>
+                <award> GameSpot Award for Best PC Game 2008 </award>
+                <award> GameSpot Award for Best Role-Playing Game 2008 </award>
+                <award> GameSpot Award for Most Violent Game to Make It Past Aussie Censors 2008 </award>
+                <award> RPG/Strategy Game of the Year 2008 </award>
+                <award> Golden Joystick Award for Ultimate Game of the Year 2009 </award>
+                <award> Golden Joystick Award for PC Game of the Year 2009 </award>
+            </awards>
+            <gameplay_images>
+                <gameplay_image href="fallout3_gp1" />
+                <gameplay_image href="fallout3_gp2" />
+            </gameplay_images>	
+		</video_game>
+
+        <video_game gameID="theWitcher3" genreRef="rpg" studioRef="cdProjekt">
+			<video_game_name> The Witcher 3 </video_game_name>
+            <game_logo href="theWitcher3_logo" />
+			<date_published> 19.05.2015 </date_published>
+			<price> 30 eur </price>
+            <metacritic_score> 93% </metacritic_score>
+            <parental_guidance> 14+ </parental_guidance>
+			<platforms>
+                <platform> Microsoft Windows </platform>
+                <platform> Xbox One </platform>
+                <platform> Playstation 4 </platform>
+            </platforms>
+			<description>
+				Played in an open world with a third-person perspective, players control protagonist Geralt of Rivia, a monster hunter known as a witcher, who is looking for his missing adopted daughter on the run from the Wild Hunt: an otherworldly force determined to capture and use her powers. Players battle the game's many dangers with weapons and magic, interact with non-player characters, and complete main-story and side quests to acquire experience points and gold, which are used to increase Geralt's abilities and purchase equipment. Its central story has several endings, determined by the player's choices at certain points in the game.
+			</description>
+            <franchise_name> The Witcher </franchise_name>
+            <game_modes>
+                <game_mode> Singleplayer </game_mode>
+            </game_modes>
+            <additional_content>
+                <content>
+                    <name> Temerian Armor Set </name>
+                    <type> DLC </type>
+                    <date_published> 03.06.2015 </date_published>
+                </content>
+                <content>
+                    <name> New Quest: Fool's Gold </name>
+                    <type> DLC </type>
+                    <date_published> 2015 </date_published>
+                </content>
+                <content>
+                    <name> Scavenger Hunt: Wolf School Gear </name>
+                    <type> DLC </type>
+                    <date_published> 2015 </date_published>
+                </content>
+                <content>
+                    <name> New Quest: Where The Cat and Wolf Play </name>
+                    <type> DLC </type>
+                    <date_published> 2015 </date_published>
+                </content>
+                <content>
+                    <name> Hearts Of Stone </name>
+                    <type> expansion </type>
+                    <date_published> 13.10.2015 </date_published>
+                </content>
+                <content>
+                    <name> Blood and Wine </name>
+                    <type> expansion </type>
+                    <date_published> 31.05.2016 </date_published>
+                </content>
+            </additional_content>
+            <awards>
+                <award> The Game Award for Most Anticipated Game 2014 </award>
+                <award> The Game Award for Game Of The Year 2015 </award>
+                <award> The Game Award for Best Role Playing Game 2015 </award>
+            </awards>
+            <gameplay_images>
+                <gameplay_image href="theWitcher3_gp1" />
+                <gameplay_image href="theWitcher3_gp2" />
+            </gameplay_images>	
+		</video_game>
+
+        <video_game gameID="diablo2" genreRef="rpg" studioRef="blizzard">
+			<video_game_name> Diablo II </video_game_name>
+            <game_logo href="diablo2_logo" />
+			<date_published> 29.06.2000 </date_published>
+			<price> 10 eur </price>
+            <metacritic_score> 88% </metacritic_score>
+            <parental_guidance> 13+ </parental_guidance>
+			<platforms>
+                <platform> Microsoft Windows </platform>
+                <platform> macOS </platform>
+            </platforms>
+			<description>
+				Diablo II's storyline progresses through four chapters or "Acts". Each act follows a predetermined path, but the wilderness areas and dungeons between key cities are randomly generated. The player progresses through the story by completing a series of quests within each act, while there are also optional side dungeons for extra monsters and experience. 
+			</description>
+            <franchise_name> Diablo </franchise_name>
+            <game_modes>
+                <game_mode> Singleplayer </game_mode>
+                <game_mode> Multiplayer </game_mode>
+            </game_modes>
+            <additional_content>
+                <content>
+                    <name> Lord Of Destruction </name>
+                    <type> expansion </type>
+                    <date_published> 27.06.2001 </date_published>
+                </content>
+            </additional_content>
+            <awards>
+                <award> Computer Game of the Year 2001 </award>
+                <award> Computer Role Playing Game of the Year 2001 </award>
+                <award> Game of the Year 2001 </award>
+            </awards>
+            <gameplay_images>
+                <gameplay_image href="diablo2_gp1" />
+                <gameplay_image href="diablo2_gp2" />
+            </gameplay_images>	
+		</video_game>
+
+        <video_game gameID="hearthstone" genreRef="card" studioRef="blizzard">
+			<video_game_name> Hearthstone </video_game_name>
+            <game_logo href="hearthstone_logo" />
+			<date_published> 11.03.2014 </date_published>
+			<price> free </price>
+            <metacritic_score> 88% </metacritic_score>
+            <parental_guidance> 11+ </parental_guidance>
+			<platforms>
+                <platform> Microsoft Windows </platform>
+                <platform> Android </platform>
+                <platform> macOS </platform>
+                <platform> iOS </platform>
+            </platforms>
+			<description>
+				The game is a turn-based card game between two opponents, using constructed decks of 30 cards along with a selected hero with a unique power. Players use their limited mana crystals to play abilities or summon minions to attack the opponent, with the goal of destroying the opponent's hero. Winning matches and completing quests earn in-game gold, rewards in the form of new cards, and other in-game prizes.
+			</description>
+            <franchise_name> Warcraft </franchise_name>
+            <game_modes>
+                <game_mode> Singleplayer </game_mode>
+                <game_mode> Multiplayer </game_mode>
+            </game_modes>
+            <additional_content>
+                <content>
+                    <name> Goblins vs Gnomes </name>
+                    <type> expansion </type>
+                    <date_published> 12.2014 </date_published>
+                </content>
+                <content>
+                    <name> The Grand Tournament </name>
+                    <type> expansion </type>
+                    <date_published> 24.08.2015 </date_published>
+                </content>
+                <content>
+                    <name> Whispers of the Old Gods </name>
+                    <type> expansion </type>
+                    <date_published> 26.04.2016 </date_published>
+                </content>
+                <content>
+                    <name> Mean Streets of Gadgetzan </name>
+                    <type> expansion </type>
+                    <date_published> 01.12.2016 </date_published>
+                </content>
+                <content>
+                    <name> Journey to Un'Goro </name>
+                    <type> expansion </type>
+                    <date_published> 06.04.2017 </date_published>
+                </content>
+                <content>
+                    <name> Knights of the Frozen Throne </name>
+                    <type> expansion </type>
+                    <date_published> 10.08.2017 </date_published>
+                </content>
+                <content>
+                    <name> Kobolds and Catacombs </name>
+                    <type> expansion </type>
+                    <date_published> 07.12.2017 </date_published>
+                </content>
+                <content>
+                    <name> The Witchwood </name>
+                    <type> expansion </type>
+                    <date_published> 12.04.2018 </date_published>
+                </content>
+                <content>
+                    <name> The Boomsday Project </name>
+                    <type> expansion </type>
+                    <date_published> 07.08.2018 </date_published>
+                </content>
+                <content>
+                    <name> Rastakhan's Rumble </name>
+                    <type> expansion </type>
+                    <date_published> 04.12.2018 </date_published>
+                </content>
+            </additional_content>
+            <awards>
+                <award> The Game Award for Best Mobile/Handheld Game 2014 </award>
+                <award> British Academy Games Award for Multiplayer 2015 </award>
+            </awards>
+            <gameplay_images>
+                <gameplay_image href="hearthstone_gp1" />
+                <gameplay_image href="hearthstone_gp2" />
+            </gameplay_images>	
+		</video_game>
+
+        <video_game gameID="worldOfWarcraft" genreRef="rpg" studioRef="blizzard">
+			<video_game_name> World of Warcraft </video_game_name>
+            <game_logo href="worldOfWarcraft_logo" />
+			<date_published> 23.11.2004 </date_published>
+			<price> 40 eur </price>
+            <metacritic_score> 93% </metacritic_score>
+            <parental_guidance> 12+ </parental_guidance>
+			<platforms>
+                <platform> Microsoft Windows </platform>
+                <platform> macOS </platform>
+            </platforms>
+			<description>
+				 World of Warcraft takes place within the Warcraft world of Azeroth, approximately four years after the events at the conclusion of Blizzard's previous Warcraft release, Warcraft III: The Frozen Throne.
+			</description>
+            <franchise_name> Warcraft </franchise_name>
+            <game_modes>
+                <game_mode> Multiplayer </game_mode>
+            </game_modes>
+            <additional_content>
+                <content>
+                    <name> The Burning Crusade </name>
+                    <type> expansion </type>
+                    <date_published> 16.01.2007 </date_published>
+                </content>
+                <content>
+                    <name> Wrath of the Lich King </name>
+                    <type> expansion </type>
+                    <date_published> 13.11.2008 </date_published>
+                </content>
+                <content>
+                    <name> Cataclysm </name>
+                    <type> expansion </type>
+                    <date_published> 07.12.2010 </date_published>
+                </content>
+                <content>
+                    <name> Mists of Pandaria </name>
+                    <type> expansion </type>
+                    <date_published> 25.09.2012 </date_published>
+                </content>
+                <content>
+                    <name> Warlords of Draenor </name>
+                    <type> expansion </type>
+                    <date_published> 13.11.2014 </date_published>
+                </content>
+                <content>
+                    <name> Legion </name>
+                    <type> expansion </type>
+                    <date_published> 30.08.2016 </date_published>
+                </content>
+                <content>
+                    <name> Battle for Azeroth </name>
+                    <type> expansion </type>
+                    <date_published> 14.08.2018 </date_published>
+                </content>
+            </additional_content>
+            <awards>
+                <award> VGX Award for Best PC Game 2005 </award>
+                <award> VGX Award for Best RPG 2005 </award>
+                <award> VGX Award for Most Addictive Video Game 2005 </award>
+                <award> Technology and Engineering Emmy Award for Outstanding Achievement in Video Gaming Technology and Application 2008 </award>
+            </awards>
+            <gameplay_images>
+                <gameplay_image href="worldOfWarcraft_gp1" />
+                <gameplay_image href="worldOfWarcraft_gp2" />
+            </gameplay_images>	
+		</video_game>
+
+        <video_game gameID="totalWarWarhammer" genreRef="strategy" studioRef="creativeAssembly">
+			<video_game_name> Total War: Warhammer </video_game_name>
+            <game_logo href="totalWarWarhammer_logo" />
+			<date_published> 24.05.2016 </date_published>
+			<price> 60 eur </price>
+            <metacritic_score> 86% </metacritic_score>
+            <parental_guidance> 12+ </parental_guidance>
+			<platforms>
+                <platform> Microsoft Windows </platform>
+                <platform> Linux </platform>
+                <platform> macOS </platform>
+            </platforms>
+			<description>
+				 The gameplay unfolds both on a scale of kingdoms in a turn-based strategy campaign, managing cities and the movement of armies, and on a smaller scale in real-time tactics skirmishes and sieges, managing the movement and actions of individual units and characters within an army during a battle. The player controls one of several fantasy factions, each with their own units, characters and abilities.
+			</description>
+            <franchise_name> Total War Warhammer Fantasy </franchise_name>
+            <game_modes>
+                <game_mode> Singleplayer </game_mode>
+                <game_mode> Multiplayer </game_mode>
+            </game_modes>
+            <additional_content>
+                <content>
+                    <name> Blood Knights </name>
+                    <type> DLC </type>
+                    <date_published> 30.06.2016 </date_published>
+                </content>
+                <content>
+                    <name> Amber Wizard </name>
+                    <type> DLC </type>
+                    <date_published> 28.06.2016 </date_published>
+                </content>
+                <content>
+                    <name> Vlad von Carstein </name>
+                    <type> DLC </type>
+                    <date_published> 09.09.2016 </date_published>
+                </content>
+                <content>
+                    <name> Wurrzag </name>
+                    <type> DLC </type>
+                    <date_published> 20.10.2016 </date_published>
+                </content>
+                <content>
+                    <name> New Warriors of Chaos units </name>
+                    <type> DLC </type>
+                    <date_published> 20.10.2016 </date_published>
+                </content>
+                <content>
+                    <name> Grey Wizard </name>
+                    <type> DLC </type>
+                    <date_published> 08.12.2016 </date_published>
+                </content>
+                <content>
+                    <name> Jade Wizard </name>
+                    <type> DLC </type>
+                    <date_published> 08.12.2016 </date_published>
+                </content>
+                <content>
+                    <name> Morghur and Harpies </name>
+                    <type> DLC </type>
+                    <date_published> 08.12.2016 </date_published>
+                </content>
+                <content>
+                    <name> Grombrindal </name>
+                    <type> DLC </type>
+                    <date_published> 19.01.2017 </date_published>
+                </content>
+                <content>
+                    <name> Bretonnia </name>
+                    <type> DLC </type>
+                    <date_published> 28.02.2017 </date_published>
+                </content>
+                <content>
+                    <name> Isabella von Carstein </name>
+                    <type> DLC </type>
+                    <date_published> 28.02.2017 </date_published>
+                </content>
+                <content>
+                    <name> Krell "An Old Friend" </name>
+                    <type> DLC </type>
+                    <date_published> 07.2017 </date_published>
+                </content>
+            </additional_content>
+            <awards>
+					<award>The Game Awards Best Strategy Game 2017</award>
+					<award>Ping Awards Best International Game 2017</award>							
+			</awards>
+            <gameplay_images>
+                <gameplay_image href="totalWarWarhammer_gp1" />
+                <gameplay_image href="totalWarWarhammer_gp2" />
+            </gameplay_images>	
+		</video_game>
+
+        <video_game gameID="europaUniversalisIV" genreRef="strategy" studioRef="paradoxInteractive">
+			<video_game_name> Europa Universalis IV </video_game_name>
+            <game_logo href="europaUniversalisIV_logo" />
+			<date_published> 13.08.2013 </date_published>
+			<price> 40 eur </price>
+            <metacritic_score> 87% </metacritic_score>
+            <parental_guidance> 12+ </parental_guidance>
+			<platforms>
+                <platform> Microsoft Windows </platform>
+                <platform> Linux </platform>
+                <platform> OS X </platform>
+            </platforms>
+			<description>
+				 This is a strategy game where players can control a nation from the Late Middle Ages through the Early modern period (1444 to 1821 AD), conducting trade, administration, diplomacy, colonization and warfare.
+			</description>
+            <franchise_name> Europa Universalis </franchise_name>
+            <game_modes>
+                <game_mode> Singleplayer </game_mode>
+                <game_mode> Multiplayer </game_mode>
+            </game_modes>
+            <additional_content>
+                <content>
+                    <name> Conquest of Paradise </name>
+                    <type> expansion </type>
+                    <date_published> 14.01.2014 </date_published>
+                </content>
+                <content>
+                    <name> Wealth of Nations </name>
+                    <type> expansion </type>
+                    <date_published> 29.05.2014 </date_published>
+                </content>
+                <content>
+                    <name> Res Publica </name>
+                    <type> expansion </type>
+                    <date_published> 16.07.2014 </date_published>
+                </content>
+                <content>
+                    <name> Art of War </name>
+                    <type> expansion </type>
+                    <date_published> 30.10.2014 </date_published>
+                </content>
+                <content>
+                    <name> El Dorado </name>
+                    <type> expansion </type>
+                    <date_published> 26.02.2015 </date_published>
+                </content>
+                <content>
+                    <name> Common Sense </name>
+                    <type> expansion </type>
+                    <date_published> 09.06.2015 </date_published>
+                </content>
+                <content>
+                    <name> The Cossacks </name>
+                    <type> expansion </type>
+                    <date_published> 01.12.2015 </date_published>
+                </content>
+                <content>
+                    <name> Mare Nostrum </name>
+                    <type> expansion </type>
+                    <date_published> 05.04.2016 </date_published>
+                </content>
+                <content>
+                    <name> Rights of Man </name>
+                    <type> expansion </type>
+                    <date_published> 11.10.2016 </date_published>
+                </content>
+                <content>
+                    <name> Mandate of Heaven </name>
+                    <type> expansion </type>
+                    <date_published> 06.04.2017 </date_published>
+                </content>
+                <content>
+                    <name> Third Rome </name>
+                    <type> expansion </type>
+                    <date_published> 14.06.2017 </date_published>
+                </content>
+                <content>
+                    <name> Cradle of Civilization </name>
+                    <type> expansion </type>
+                    <date_published> 16.11.2017 </date_published>
+                </content>
+                <content>
+                    <name> Rule Britannia </name>
+                    <type> expansion </type>
+                    <date_published> 20.03.2018 </date_published>
+                </content>
+                <content>
+                    <name> Dharma </name>
+                    <type> expansion </type>
+                    <date_published> 06.09.2018 </date_published>
+                </content>
+                <content>
+                    <name> Golden Century </name>
+                    <type> expansion </type>
+                    <date_published> 11.12.2018 </date_published>
+                </content>
+            </additional_content>
+			<awards>
+				<award>Game Debate's Best Strategy 2013</award>
+			</awards>
+            
+            <gameplay_images>
+                <gameplay_image href="europaUniversalisIV_gp1" />
+                <gameplay_image href="europaUniversalisIV_gp2" />
+            </gameplay_images>	
+		</video_game>
+
+        <video_game gameID="stellaris" genreRef="strategy" studioRef="paradoxInteractive">
+			<video_game_name> Stellaris </video_game_name>
+            <game_logo href="stellaris_logo" />
+			<date_published> 09.05.2016 </date_published>
+			<price> 40 eur </price>
+            <metacritic_score> 78% </metacritic_score>
+            <parental_guidance> 12+ </parental_guidance>
+			<platforms>
+                <platform> Microsoft Windows </platform>
+                <platform> Linux </platform>
+                <platform> OS X </platform>
+            </platforms>
+			<description>
+				 This is a strategy game set in space, beginning in the year 2200. Players take control of a species in its early stages of interstellar space exploration, right after the invention of faster-than-light (FTL) spaceship technology, ready to claim a place as one of "the species of the stars". Depending on several factors, such as the ethics of the civilization and the player's desires, the ultimate goal of the empire can range from galactic conquest, hoarding of resources and technological supremacy, to the peaceful coexistence or absolute destruction of all sentient life.
+			</description>
+            <franchise_name> Stellaris </franchise_name>
+            <game_modes>
+                <game_mode> Singleplayer </game_mode>
+                <game_mode> Multiplayer </game_mode>
+            </game_modes>
+            <additional_content>
+                <content>
+                    <name> Leviathans </name>
+                    <type> expansion </type>
+                    <date_published> 20.10.2016 </date_published>
+                </content>
+                <content>
+                    <name> Utopia </name>
+                    <type> expansion </type>
+                    <date_published> 06.04.2017 </date_published>
+                </content>
+                <content>
+                    <name> Synthetic Dawn </name>
+                    <type> expansion </type>
+                    <date_published> 21.09.2017 </date_published>
+                </content>
+                <content>
+                    <name> Apocalypse </name>
+                    <type> expansion </type>
+                    <date_published> 22.02.2018 </date_published>
+                </content>
+                <content>
+                    <name> Distant Stars </name>
+                    <type> expansion </type>
+                    <date_published> 22.05.2018 </date_published>
+                </content>
+                
+                <content>
+                    <name> MegaCorp </name>
+                    <type> expansion </type>
+                    <date_published> 06.12.2018 </date_published>
+                </content>
+            </additional_content>
+            <awards>
+				<award>Steam's Labor of Love 2018</award>
+			</awards>
+            <gameplay_images>
+                <gameplay_image href="stellaris_gp1" />
+                <gameplay_image href="stellaris_gp2" />
+            </gameplay_images>	
+		</video_game>
+    </video_games>
+    
+</catalogue>
