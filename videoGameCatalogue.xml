@@ -118,7 +118,7 @@
                 <platform> Mintendo Switch </platform>
             </platforms>
 			<description>
-				The game's main story revolves around the player character's quest to defeat Alduin the World-Eater, a dragon who is prophesied to destroy the world. The game is set 200 years after the events of Oblivion and takes place in the fictional province of Skyrim. Over the course of the game, the player completes quests and develops the character by improving skills. The game continues the open-world tradition of its predecessors by allowing the player to travel anywhere in the game world at any time, and to ignore or postpone the main storyline indefinitely.
+				The game's main story revolves around the player character's quest to defeat Alduin the World-Eater, a dragon who is prophesied to destroy the world. The game is set 200 years after the events of Oblivion and takes place in the fictional province of Skyrim. Over the course of the game, the player completes quests and develops the character by improving skills.
 			</description>
             <franchise_name> The Elder Scrolls </franchise_name>
             <game_modes>
@@ -147,8 +147,8 @@
                 <award> GCA Best Console Game 2011 </award>
             </awards>
             <gameplay_images>
-                <gameplay_image href="skyrim_gp1" />
-                <gameplay_image href="skyrim_gp2" />
+                <gameplay_image_upper href="skyrim_gp1" />
+                <gameplay_image_lower href="skyrim_gp2" />
             </gameplay_images>	
 		</video_game>
 
@@ -232,8 +232,8 @@
                 <award> Satellite Award for Outstanding Role Playing Game 2006 </award>
             </awards>
             <gameplay_images>
-                <gameplay_image href="oblivion_gp1" />
-                <gameplay_image href="oblivion_gp2" />
+                <gameplay_image_upper href="oblivion_gp1" />
+                <gameplay_image_lower href="oblivion_gp2" />
             </gameplay_images>	
         </video_game>
 
@@ -296,8 +296,8 @@
                 <award> Golden Joystick Award for PC Game of the Year 2009 </award>
             </awards>
             <gameplay_images>
-                <gameplay_image href="fallout3_gp1" />
-                <gameplay_image href="fallout3_gp2" />
+                <gameplay_image_upper href="fallout3_gp1" />
+                <gameplay_image_lower href="fallout3_gp2" />
             </gameplay_images>	
 		</video_game>
 
@@ -358,8 +358,8 @@
                 <award> The Game Award for Best Role Playing Game 2015 </award>
             </awards>
             <gameplay_images>
-                <gameplay_image href="theWitcher3_gp1" />
-                <gameplay_image href="theWitcher3_gp2" />
+                <gameplay_image_upper href="theWitcher3_gp1" />
+                <gameplay_image_lower href="theWitcher3_gp2" />
             </gameplay_images>	
 		</video_game>
 
@@ -395,8 +395,8 @@
                 <award> Game of the Year 2001 </award>
             </awards>
             <gameplay_images>
-                <gameplay_image href="diablo2_gp1" />
-                <gameplay_image href="diablo2_gp2" />
+                <gameplay_image_upper href="diablo2_gp1" />
+                <gameplay_image_lower href="diablo2_gp2" />
             </gameplay_images>	
 		</video_game>
 
@@ -478,8 +478,8 @@
                 <award> British Academy Games Award for Multiplayer 2015 </award>
             </awards>
             <gameplay_images>
-                <gameplay_image href="hearthstone_gp1" />
-                <gameplay_image href="hearthstone_gp2" />
+                <gameplay_image_upper href="hearthstone_gp1" />
+                <gameplay_image_lower href="hearthstone_gp2" />
             </gameplay_images>	
 		</video_game>
 
@@ -545,8 +545,8 @@
                 <award> Technology and Engineering Emmy Award for Outstanding Achievement in Video Gaming Technology and Application 2008 </award>
             </awards>
             <gameplay_images>
-                <gameplay_image href="worldOfWarcraft_gp1" />
-                <gameplay_image href="worldOfWarcraft_gp2" />
+                <gameplay_image_upper href="worldOfWarcraft_gp1" />
+                <gameplay_image_lower href="worldOfWarcraft_gp2" />
             </gameplay_images>	
 		</video_game>
 
@@ -637,8 +637,8 @@
 					<award>Ping Awards Best International Game 2017</award>							
 			</awards>
             <gameplay_images>
-                <gameplay_image href="totalWarWarhammer_gp1" />
-                <gameplay_image href="totalWarWarhammer_gp2" />
+                <gameplay_image_upper href="totalWarWarhammer_gp1" />
+                <gameplay_image_lower href="totalWarWarhammer_gp2" />
             </gameplay_images>	
 		</video_game>
 
@@ -663,16 +663,6 @@
                 <game_mode> Multiplayer </game_mode>
             </game_modes>
             <additional_content>
-                <content>
-                    <name> Conquest of Paradise </name>
-                    <type> expansion </type>
-                    <date_published> 14.01.2014 </date_published>
-                </content>
-                <content>
-                    <name> Wealth of Nations </name>
-                    <type> expansion </type>
-                    <date_published> 29.05.2014 </date_published>
-                </content>
                 <content>
                     <name> Res Publica </name>
                     <type> expansion </type>
@@ -744,8 +734,8 @@
 			</awards>
             
             <gameplay_images>
-                <gameplay_image href="europaUniversalisIV_gp1" />
-                <gameplay_image href="europaUniversalisIV_gp2" />
+                <gameplay_image_upper href="europaUniversalisIV_gp1" />
+                <gameplay_image_lower href="europaUniversalisIV_gp2" />
             </gameplay_images>	
 		</video_game>
 
@@ -806,8 +796,8 @@
 				<award>Steam's Labor of Love 2018</award>
 			</awards>
             <gameplay_images>
-                <gameplay_image href="stellaris_gp1" />
-                <gameplay_image href="stellaris_gp2" />
+                <gameplay_image_upper href="stellaris_gp1" />
+                <gameplay_image_lower href="stellaris_gp2" />
             </gameplay_images>	
 		</video_game>
     </video_games>

@@ -40,7 +40,9 @@
     <!ELEMENT date_content_published (#PCDATA)>
     <!ELEMENT awards (award+)>
     <!ELEMENT award (#PCDATA)>
-    <!ELEMENT gameplay_images (gameplay_image+)>
-    <!ELEMENT gameplay_image EMPTY>
-	<!ATTLIST gameplay_image href ENTITY #REQUIRED>
+    <!ELEMENT gameplay_images (gameplay_image_upper, gameplay_image_lower)>
+    <!ELEMENT gameplay_image_upper EMPTY>
+	<!ATTLIST gameplay_image_upper href ENTITY #REQUIRED>
+	<!ELEMENT gameplay_image_lower EMPTY>
+	<!ATTLIST gameplay_image_lower href ENTITY #REQUIRED>
 	<!NOTATION jpg PUBLIC "jpg viewer">

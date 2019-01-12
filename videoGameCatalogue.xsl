@@ -27,42 +27,38 @@
 							<fo:block position="absolute" text-align="center" padding-before="12mm" margin-left="2cm" font-family="Monotype Corsiva" font-size="40pt" color="black">
 								<xsl:value-of select="studio_name"/>
 							</fo:block>
-							<fo:block position="absolute" text-align="center" font-weight="bold" margin-left="2cm" font-family="Monotype Corsiva" font-size="48pt" padding-before="50mm" color="black">
-								<fo:external-graphic margin-left="5cm" margin-bottom="15mm" content-height="200pt" content-width="200pt">
-									<xsl:attribute name="src">
-										url('images/studios/<xsl:value-of select="@studioID"/>.jpg')
-									</xsl:attribute>
-								</fo:external-graphic>
+							<fo:block position="absolute" text-align="center" font-weight="bold" margin-left="2cm" padding-before="20mm" color="black">
+								<xsl:apply-templates select="."/>
 							</fo:block>
-							<fo:block position="relative" font-family="Arial" font-weight="bold" font-size="15pt" color="black" padding-before="5mm" margin-left="2cm">
+							<fo:block position="relative" font-family="Roboto" font-weight="bold" font-size="15pt" color="black" padding-before="5mm" margin-left="2cm">
 								Headquarters: 
 							</fo:block>
-							<fo:block position="relative" font-family="Arial" font-size="14pt" color="black" start-indent="5mm" end-indent="5mm" padding-before="0mm" margin-left="2.5cm" text-align="justify">
+							<fo:block position="relative" font-family="Calibri" font-size="14pt" color="black" start-indent="5mm" end-indent="5mm" padding-before="0mm" margin-left="2.5cm" text-align="justify">
 								<xsl:value-of select="headquarters"/>
 							</fo:block>
-							<fo:block position="relative" font-family="Arial" font-weight="bold" font-size="15pt" color="black" padding-before="5mm" margin-left="2cm">
+							<fo:block position="relative" font-family="Roboto" font-weight="bold" font-size="15pt" color="black" padding-before="5mm" margin-left="2cm">
 								Company was founded on: 
 							</fo:block>
-							<fo:block position="relative" font-family="Arial" font-size="14pt" color="black" start-indent="5mm" end-indent="5mm" padding-before="0mm" margin-left="2.5cm" text-align="justify">
+							<fo:block position="relative" font-family="Calibri" font-size="14pt" color="black" start-indent="5mm" end-indent="5mm" padding-before="0mm" margin-left="2.5cm" text-align="justify">
 								<xsl:value-of select="date_founded"/>
 							</fo:block>
 							
 							<xsl:if test="not(parent_company = 'N/A')">
-								<fo:block position="relative" font-family="Arial" font-weight="bold" font-size="15pt" color="black" padding-before="5mm" margin-left="2cm">
+								<fo:block position="relative" font-family="Roboto" font-weight="bold" font-size="15pt" color="black" padding-before="5mm" margin-left="2cm">
 									<xsl:value-of select="studio_name"/>
 									is part of: 
 								</fo:block>
-								<fo:block position="relative" font-family="Arial" font-size="14pt" color="black" start-indent="5mm" end-indent="5mm" padding-before="0mm" margin-left="2.5cm" text-align="justify">
+								<fo:block position="relative" font-family="Calibri" font-size="14pt" color="black" start-indent="5mm" end-indent="5mm" padding-before="0mm" margin-left="2.5cm" text-align="justify">
 									<xsl:value-of select="parent_company"/>
 								</fo:block>
 							</xsl:if>							
 							
-							<fo:block position="relative" font-family="Arial" font-weight="bold" font-size="15pt" color="black" padding-before="5mm" margin-left="2cm">
+							<fo:block position="relative" font-family="Roboto" font-weight="bold" font-size="15pt" color="black" padding-before="5mm" margin-left="2cm">
 								Video games developed by 
 								<xsl:value-of select="studio_name"/>:
 							</fo:block>
 							<xsl:for-each select="id(@gameRef)">
-								<fo:block position="relative" font-family="Arial" font-size="14pt" color="black" start-indent="5mm" end-indent="5mm" padding-before="0mm" margin-left="2.5cm" text-align="justify">
+								<fo:block position="relative" font-family="Calibri" font-size="14pt" color="black" start-indent="5mm" end-indent="5mm" padding-before="0mm" margin-left="2.5cm" text-align="justify">
 									<xsl:value-of select="video_game_name"/>
 								</fo:block>
 							</xsl:for-each>
@@ -75,11 +71,7 @@
 					<fo:flow flow-name="xsl-region-body">
 						<fo:block-container position="absolute" top="-2.5cm" left="-2.5cm">
 							<fo:block position="absolute" text-align="center" padding-before="12mm" margin-left="2cm" font-family="Times New Roman" font-size="40pt" color="black">
-								<fo:external-graphic margin-left="5cm" margin-bottom="15mm" content-height="400pt" content-width="400pt">
-									<xsl:attribute name="src">
-											url('images/games/<xsl:value-of select="@gameID"/>.jpg')
-										</xsl:attribute>
-								</fo:external-graphic>
+								<xsl:apply-templates select="."/>
 							</fo:block>
 							<fo:block position="relative" font-family="Arial" font-weight="bold" font-size="15pt" color="black" padding-before="5mm" margin-left="2cm">
 								Developed by: 
@@ -133,6 +125,18 @@
 							<fo:block position="relative" font-family="Arial" font-size="14pt" color="black" start-indent="5mm" end-indent="5mm" padding-before="0mm" margin-left="2.5cm" text-align="justify">
 								<xsl:value-of select="description"/>
 							</fo:block>
+							
+							<fo:block position="absolute" text-align = "center" padding-before = "5mm" padding-after = "5mm" margin-left="2cm">
+								<xsl:apply-templates select="gameplay_images/gameplay_image_upper"/>
+							</fo:block>
+							
+							
+						</fo:block-container>
+					</fo:flow>
+				</fo:page-sequence>
+				<fo:page-sequence master-reference="page">
+					<fo:flow flow-name="xsl-region-body">
+						<fo:block-container position="absolute" top="-2.5cm" left="-2.5cm">
 							<fo:block position="relative" font-family="Arial" font-weight="bold" font-size="15pt" color="black" padding-before="5mm" margin-left="2cm">
 								Platforms supported: 
 							</fo:block>
@@ -141,17 +145,7 @@
 									<xsl:value-of select="."/>
 								</fo:block>
 							</xsl:for-each>
-						</fo:block-container>
-					</fo:flow>
-				</fo:page-sequence>
-				<fo:page-sequence master-reference="page">
-					<fo:flow flow-name="xsl-region-body">
-						<fo:block-container position="absolute" top="-2.5cm" left="-2.5cm">
-							<fo:block position="relative" font-family="Arial" font-weight="bold" font-size="13pt" color="black" 
-							padding-before="12mm" padding-after="5mm" margin-left="2cm">
-								Additional information for <xsl:value-of select="video_game_name"/>: 
-							</fo:block> 
-						
+									
 							<fo:block position="relative" font-family="Arial" font-weight="bold" font-size="15pt" color="black" padding-before="5mm" margin-left="2cm">
 								Franchise Name: 
 							</fo:block>
@@ -185,18 +179,7 @@
 								</fo:block>
 							</xsl:for-each>
 							<fo:block position="absolute" text-align = "center" padding-before = "5mm" padding-after = "5mm" margin-left="2cm">
-								<xsl:for-each select="gameplay_images/gameplay_image">
-									
-									<fo:inline position="relative" padding-left="0mm">
-										<fo:external-graphic margin-left="5cm" margin-bottom="15mm" content-height="250pt" content-width="220pt">
-											<xsl:attribute name="src">
-												url('images/games/<xsl:value-of select="@href"/>.jpg')
-											</xsl:attribute>
-										</fo:external-graphic>
-									</fo:inline>									
-									
-								
-								</xsl:for-each>
+								<xsl:apply-templates select="gameplay_images/gameplay_image_lower"/>
 							</fo:block>
 						</fo:block-container>
 					</fo:flow>
@@ -204,4 +187,38 @@
 			</xsl:for-each>
 		</fo:root>
 	</xsl:template>
+	
+	<xsl:template match="studio">
+		<fo:external-graphic margin-left="5cm" margin-bottom="15mm" content-height="300pt" content-width="300pt">
+			<xsl:attribute name="src">
+				url('images/studios/<xsl:value-of select="@studioID"/>.jpg')
+			</xsl:attribute>
+		</fo:external-graphic>
+	</xsl:template>
+	
+	
+	<xsl:template match="video_game">
+		<fo:external-graphic margin-left="5cm" margin-bottom="15mm" content-height="400pt" content-width="400pt">
+			<xsl:attribute name="src">
+				url('images/games/<xsl:value-of select="@gameID"/>.jpg')
+			</xsl:attribute>
+		</fo:external-graphic>
+	</xsl:template>
+	
+	<xsl:template match="gameplay_image_upper">
+		<fo:external-graphic margin-left="5cm" margin-bottom="15mm" content-height="230pt" content-width="500pt">
+			<xsl:attribute name="src">
+				url('images/games/<xsl:value-of select="@href"/>.jpg')
+			</xsl:attribute>
+		</fo:external-graphic>
+	</xsl:template>
+	
+	<xsl:template match="gameplay_image_lower">
+		<fo:external-graphic margin-left="5cm" margin-bottom="15mm" content-height="300pt" content-width="500pt">
+			<xsl:attribute name="src">
+				url('images/games/<xsl:value-of select="@href"/>.jpg')
+			</xsl:attribute>
+		</fo:external-graphic>
+	</xsl:template>
+	
 </xsl:stylesheet>
